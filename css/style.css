@@ -1276,8 +1276,8 @@ p .timer span{
     overflow: hidden;
   }
   .fly-content {
-    opacity: 0;
-    display: none;
+    opacity: 1; 
+    top:90px;
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease; 
@@ -1285,16 +1285,17 @@ p .timer span{
 
 .fly-content.visible {
     opacity: 1;
+	top:10px;
     display: block;
     -webkit-animation: scale 1s linear forwards;
             animation: scale 1s linear forwards;
 }
 @-webkit-keyframes scale {
   0%{
-    opacity: 0;
+    opacity: 1;
   }
   50%{
-    opacity: 0;
+    opacity: 1;
   }
   100%{
     opacity: 1;
@@ -1302,10 +1303,10 @@ p .timer span{
 }
 @keyframes scale {
   0%{
-    opacity: 0;
+     opacity: 1;
   }
   50%{
-    opacity: 0;
+    opacity: 1;
   }
   100%{
     opacity: 1;
